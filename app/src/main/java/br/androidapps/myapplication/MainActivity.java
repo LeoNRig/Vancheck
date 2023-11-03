@@ -1,17 +1,16 @@
 package br.androidapps.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView btnMotorista, btnPais;
+    TextView btnMotorista;
+    AppCompatButton btnEntrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +18,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnMotorista = findViewById(R.id.btnMotorista);
-        btnPais = findViewById(R.id.btnPais);
 
         btnMotorista.setOnClickListener(view -> {
             startActivity(new Intent(this,loginMotorista.class));
         });
 
-        btnPais.setOnClickListener(view -> {
-            startActivity(new Intent(this,loginPais.class));
-        });
+        btnEntrar = findViewById(R.id.btnEntrar);
+
     }
 }

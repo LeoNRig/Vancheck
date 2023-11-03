@@ -50,37 +50,34 @@
         />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEntrar"
         android:layout_width="163dp"
+        android:textSize="16dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="10dp"
+        android:background="@drawable/background_btn"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:padding="15dp"
         android:text="Entrar" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="100px">
+        android:layout_marginTop="65dp">
 
         <TextView
             android:id="@+id/btnMotorista"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="32dp"
-            android:text="Cadastrar Motorista"
+            android:textSize="36dp"
+            android:text="Novo Motorista"
             android:layout_weight="1"
             android:textAlignment="center"
             android:clickable="true"/>
-        <TextView
-            android:id="@+id/btnPais"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="32dp"
-            android:text="Cadastrar Pais"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:clickable="true"/>
+
 
     </LinearLayout>
 
